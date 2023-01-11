@@ -49,5 +49,4 @@ https://itslinuxfoss.com/wget-command-not-found/
 前往連結 : http://mirrors.estointernet.in/apache/tomcat/tomcat-8/
 確認版本號並更改安裝指令
 `sudo wget https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v＜版本號在這＞/bin/apache-tomcat-＜版本號在這＞.zip`
-範例: `https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.zip`
 
