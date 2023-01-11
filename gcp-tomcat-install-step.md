@@ -32,7 +32,7 @@ chmod 700 *.sh
 ./startup.sh
 
 建立防火牆規則
-
+如果初始選擇允許 HTTP/HTTPS流量,直接在該防火牆規則上添加port即可(,逗點分隔)
 瀏覽器 IP + port
 
 ```
