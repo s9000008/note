@@ -4,7 +4,7 @@
 | 無須root權限  | 需使用root權限 |
 | 需常駐程式  | 無常駐程式 |
 
-# Ubuntu下使用Podman建立容器
+# Ubuntu下使用Podman建立Tomcat容器
 
 1. 安裝Podman
   * ```sudo apt-get -y install podman```
