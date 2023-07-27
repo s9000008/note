@@ -4,7 +4,6 @@
 2.	若專案為Spring Boot 2.7前的版本,請將專案先升級至Spring Boot 2.7版本,並確認是否可以正常執行.
 3.	確認2.7版本中的依賴項是否在3後的版本發生異動.
 4.	若專案有使用Spring Security ,請先將Spring Security升級至5.8 .
-	* 官方文件 <https://docs.spring.io/spring-security/reference/5.8/migration/index.html>
 5.	更改Maven parent中 Spring Boot版本至3.0.0 .
    ```maven
 <parent> 
