@@ -1,4 +1,4 @@
-# Spring Boot 2 升級至Spring Boot 3 
+# Spring Boot 2 升級至 Spring Boot 3 注意事項
 
 1.	確保專案可以於JDK17的環境下進行編譯與執行.
 2.	若專案為Spring Boot 2.7前的版本,請將專案先升級至Spring Boot 2.7版本,並確認是否可以正常執行.
@@ -13,8 +13,8 @@
       <relativePath/> <!-- 查找父級存儲庫 --> 
 </parent>
   ```
-7.	Spring Boot2中棄用或是不推薦的classes, methods, properties , annotations在Spring Boot3版本已被移除,當升級為3.0後須修復錯誤與替換.
-8.	Spring Boot3中調整了部分配置屬性的名稱,可以透過添加依賴後運行,確保相關配置屬性的變更並在```完成後將該依賴移除```.
+7.	Spring Boot2 中棄用或是不推薦的classes, methods, properties , annotations在Spring Boot3版本已被移除,當升級為3.0後須修復錯誤與替換.
+8.	Spring Boot3 中調整了部分配置屬性的名稱,可以透過添加依賴後運行,確保相關配置屬性的變更並在```完成後將該依賴移除```.
    ```maven
 <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -22,7 +22,7 @@
 	<scope>runtime</scope>
 </dependency>
 ```
-10.	 javax開頭的package請改為jakarta ,在Spring Boot3中Java EE相關API大多改為Jakarta EE.(javax.sql.* 與 javax.crypto.*例外)
+10.	 javax開頭的package請改為jakarta ,在 Spring Boot3 中Java EE相關API大多改為Jakarta EE.(javax.sql.* 與 javax.crypto.*例外)
 11.	 Spring Boot3 核心部分調整
   * 應用執行時,在Console中顯示的Spring Banner不再支援圖片請改為txt.
   * 預設的日誌(Logback、Log4j2)日期格式更改為 ISO-8601("yyyy-MM-dd’T’HH:mm:ss.SSSXXX"). 
