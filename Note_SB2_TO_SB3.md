@@ -1,7 +1,7 @@
 # Spring Boot 2 升級至 Spring Boot 3 注意事項
 
 1.	確保專案可以於JDK17的環境下進行編譯與執行.
-2.	若專案為Spring Boot 2.7前的版本,請將專案先升級至Spring Boot 2.7版本,並確認是否可以正常執行.
+2.	若專案為Spring Boot 2.X的版本,請將專案先升級至Spring Boot 2.7版本,並確認是否可以正常執行.
 3.	確認2.7版本中的依賴項是否在3後的版本發生異動.
 4.	若專案有使用Spring Security ,請先將Spring Security升級至5.8 .
 5.	更改Maven parent中 Spring Boot版本至3.0.0 .
