@@ -24,17 +24,16 @@
 ```
 10.	 javax開頭的package請改為jakarta ,在Spring Boot3中Java EE相關API大多改為Jakarta EE.(javax.sql.* 與 javax.crypto.*例外)
 11.	 Spring Boot3 核心部分調整
-  * Spring Boot應用執行時,Spring Logo不再支援圖片請改為txt.
-  * Spring Boot 預設的日誌(Logback、Log4j2)日期格式更改為 ISO-8601("yyyy-MM-dd’T’HH:mm:ss.SSSXXX"). 
+  * 應用執行時,在Console中顯示的Spring Banner不再支援圖片請改為txt.
+  * 預設的日誌(Logback、Log4j2)日期格式更改為 ISO-8601("yyyy-MM-dd’T’HH:mm:ss.SSSXXX"). 
     (若需套用舊格式可以使用logging.pattern.dateformat或是LOG_DATEFORMAT_PATTERN 環境變數)
   * @ConstructingBinding不再需要@ConstructorBinding
-  * YamlJsonParser 已被刪除,若有使用到請改用其他JsonParser實現的解析器.
+  * YamlJsonParser 已被刪除,若有使用到請改用其他JsonParser實作的解析器.
 13.	 Web應用更動
   * HttpMethod從枚舉改為實體Class
   * Spring MVC 和 WebFlux URL 中的結尾斜線自適應設置改為false. (例如: @GetMapping("/member/register") , 當你呼叫URI為/member/register/時,回傳會是404)
-  * 若使用的Jetty不支援Servlet 6.0, 則須在Servlet API降級為5.0
-
-
+  * Jetty不支援Servlet 6.0, Servlet API需降級為5.0
+14. Hibernate 預設為6.1版本
 
 ### 參考資料
 * <https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Migration-Guide>
