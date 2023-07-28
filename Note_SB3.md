@@ -23,6 +23,7 @@ Spring Boot 是一個開源的、用於簡化和加速 Spring 應用程序開發
 2. GraalVM支援.
   ```
   支援透過GraalVM將應用編譯成可以在本地執行的映像檔.
+  (可獨立運作、啟動速度提升、性能提升、資源占用降低)
   
   最低支援版本GrallVM 22.3+ & Native Build Tools Plugin 0.9.17+.
   ```
@@ -44,6 +45,8 @@ Spring Boot 是一個開源的、用於簡化和加速 Spring 應用程序開發
   ```
    
 ### 參考資料
+* <https://docs.oracle.com/zh-tw/learn/understanding-reflection-graalvm-native-image/index.html#introduction>
+* <https://blogs.oracle.com/java/post/go-native-with-spring-boot-3-and-graalvm>
 * <https://www.youtube.com/watch?v=FvDSL3pSKNQ>
 * <https://juejin.cn/post/7165884190028726308>
 * <https://juejin.cn/post/7170579125374517278>
