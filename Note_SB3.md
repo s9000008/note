@@ -22,7 +22,7 @@ Spring Boot 是一個開源的、用於簡化和加速 Spring 應用程序開發
   ```
 2. GraalVM支援.
   ```
-  支援透過GraalVM將應用編譯成可以在本地執行的映像檔.
+  提供新的部屬方式,可透過GraalVM將應用編譯成可以在本地執行的映像檔.
   (可獨立運作、啟動速度提升、性能提升、資源占用降低)
   
   最低支援版本GrallVM 22.3+ & Native Build Tools Plugin 0.9.17+.
@@ -32,16 +32,6 @@ Spring Boot 是一個開源的、用於簡化和加速 Spring 應用程序開發
   ```
   如: Apache ActiveMQ、Atomikos、EhCache2和HazelCast3 移除.
   部分Lib最低版本 : Spring6、Kotlin 1.7+、Lombok 1.18.22+ (JDK17 support支持版本）、Gradle 7.3+ 
-  ```
-5. 版本依賴
-  ```
-  Spring Boot 3 依賴Spring 6(最低版本).
-  ```
-6. Spring MVC調整
-  ```
-  HttpMethod不再是枚舉
-  結尾斜線自適應配置預設為false,可自行更改
-  
   ```
    
 ### 參考資料
